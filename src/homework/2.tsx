@@ -1,8 +1,8 @@
 import React, { useReducer } from "react";
 
 type State = {
-   isRequestInProgress: boolean,
-  requestStep: string,
+  isRequestInProgress: boolean,
+  requestStep: "start" | "pending" | "finished" | "idle";
 }
 
 const initialState: State = {
